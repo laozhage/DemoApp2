@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#E64A19</color>
+    <color name="scan_bg">#7f000000</color>
+    <color name="btn_yellow_nor">#ffd266</color>
+    <color name="btn_yellow_press">#ffb400</color>
+    <color name="btn_orange_nor">#f07d5f</color>
+    <color name="btn_orange_press">#ff9000</color>
+    <color name="btn_brown_nor">#a1887f</color>
+    <color name="btn_brown_press">#8b5828</color>
+    <color name="main_bg">#f2f5f8</color>
+    <color name="white">#fff</color>
+    <color name="line_color">#e7e7e7</color>
+    <color name="textcolor_1">#283c5a</color>
+    <color name="btn_bg_en">#7EA43C</color>
+    <color name="btn_bg_pressed">#A82E26</color>
+    <color name="btn_bg_unen">#484848</color>
+    <color name="bg_brown">#a1887f</color>
+</resources>

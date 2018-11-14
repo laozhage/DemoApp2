@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    tools:context="com.demo.bs.demoapp2.ui.activity.LoginActivity">
+    <include layout="@layout/common_toolbar"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="文件标题"
+
+            android:maxLines="1"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_marginTop="8dp"
+        android:text="选择文件"
+        android:id="@+id/btn_xzwj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="8dp"
+        android:text="上传"
+        android:id="@+id/btn_sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

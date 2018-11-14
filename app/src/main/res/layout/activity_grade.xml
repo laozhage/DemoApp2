@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/start_background">
+    <include layout="@layout/common_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/shape"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/small_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成绩统计" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:id="@+id/hide1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/small_text_style"
+                    android:text="总人数" />
+
+                <TextView
+                    android:id="@+id/total"
+                    style="@style/small_text_style"
+                    android:gravity="right" />
+
+                <TextView
+                    style="@style/small_text_style"
+                    android:gravity="right"
+                    android:text="个" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/small_text_style"
+                    android:text="平均分" />
+
+                <TextView
+                    android:id="@+id/averagescore"
+                    style="@style/small_text_style"
+                    android:gravity="right" />
+
+                <TextView
+                    style="@style/small_text_style"
+                    android:gravity="right"
+                    android:text="分" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/hide2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/small_text_style"
+                    android:text="未通过人数" />
+
+                <TextView
+                    android:id="@+id/failed"
+                    style="@style/small_text_style"
+                    android:gravity="right" />
+
+                <TextView
+                    style="@style/small_text_style"
+                    android:gravity="right"
+                    android:text="个" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <lecho.lib.hellocharts.view.ColumnChartView
+        android:layout_marginTop="8dp"
+        android:id="@+id/columnchart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+
+    </lecho.lib.hellocharts.view.ColumnChartView>
+</LinearLayout>
